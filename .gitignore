@@ -1,0 +1,5 @@
+node_modules/
+vite-dev.log
+vite-dev-error.log
+*.tgz
+*.tar.gz
