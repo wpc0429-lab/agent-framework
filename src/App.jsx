@@ -34,7 +34,7 @@ export function App() {
 
     <section className="hero" id="overview">
       <div className="hero-grid" aria-hidden="true" />
-      <div className="hero-copy"><p className="kicker">ENTERPRISE AI CONTROL PLANE</p><h1>一处接入，<br/><em>全域受控。</em></h1><p className="lead">PX-Work 将企业内网算力、模型、数据、知识与业务系统纳入一套统一控制平面，让每一次 AI 调用都身份明确、场景获批、过程可观测、结果可追溯。</p><div className="hero-actions"><button onClick={() => jumpTo("architecture")}>进入架构全景 <span>↘</span></button><p><b>核心原则</b>资源不直供 · 系统不直连 · 权限不旁路</p></div></div>
+      <div className="hero-copy"><p className="kicker">ENTERPRISE AI CONTROL PLANE</p><h1>PX-Work框架<br/><em>和权限体系。</em></h1><p className="lead">PX-Work 将企业内网算力、模型、数据、知识与业务系统纳入一套统一控制平面，让每一次 AI 调用都身份明确、场景获批、过程可观测、结果可追溯。</p><div className="hero-actions"><button onClick={() => jumpTo("architecture")}>进入架构全景 <span>↘</span></button><p><b>核心原则</b>资源不直供 · 系统不直连 · 权限不旁路</p></div></div>
       <div className="hero-schematic" aria-label="从用户到企业资源的受控调用示意"><div className="schematic-top"><span>员工 / 业务部门</span><span>研发单位 / 专项 Agent</span></div><div className="auth-line"><i />ISC 身份 / 场景 Key<i /></div><div className="schematic-core"><small>唯一入口</small><strong>PX-Work</strong><span>统一网关 · 统一目录 · 统一策略 · 统一审计</span></div><div className="schematic-bottom"><span>模型算力池</span><span>数据与知识</span><span>业务系统 MCP</span></div></div>
       <div className="hero-index"><span>01 / 总体架构</span><span>02 / 权限体系</span><span>03 / 建设闭环</span></div>
     </section>
