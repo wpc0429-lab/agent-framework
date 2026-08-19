@@ -16,10 +16,10 @@ const lifecycle = [
   ["05", "受控运行", "网关观测行为与流量，策略实时生效"], ["06", "审计退出", "可追溯、可下架、可立即终止 Agent"],
 ];
 const boundaries = [
-  ["数据不另起炉灶", "结构化查询统一使用数据中台指标集服务；非结构化知识统一由知识中心承载。"],
-  ["系统不被 AI 直连", "存量系统由供应商建设 MCP 服务，按交易平台、决策中枢两类标准接入。"],
-  ["长期服务必须注册", "专项、持久化或与新系统集成的 AI 服务，必须以 Agent 形式登记后运行。"],
-  ["终端能力本地受控", "本地执行权限、用户记忆、任务记录与会话管理按企业策略建设。"],
+  ["数据与知识统一承载", "结构化数据查询统一通过数据中台指标集服务提供，非结构化知识统一由知识中心承载与管理。"],
+  ["业务系统规范接入", "存量业务系统由供应商按统一规范建设 MCP 服务，并依据交易平台、决策中枢两类标准实施接入。"],
+  ["长期服务注册管理", "专项化、持久化或与新建系统集成的 AI 服务，应以 Agent 形式完成注册登记后方可投入运行。"],
+  ["终端能力策略管控", "本地执行权限、用户记忆、任务记录及会话管理等终端能力，应按照企业统一策略进行配置与管控。"],
 ];
 const jumpTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 
@@ -34,7 +34,7 @@ export function App() {
 
     <section className="hero" id="overview">
       <div className="hero-grid" aria-hidden="true" />
-      <div className="hero-copy"><p className="kicker">ENTERPRISE AI CONTROL PLANE</p><h1>PX-Work框架<br/><em>和权限体系。</em></h1><p className="lead">PX-Work 将企业内网算力、模型、数据、知识与业务系统纳入一套统一控制平面，让每一次 AI 调用都身份明确、场景获批、过程可观测、结果可追溯。</p><div className="hero-actions"><button onClick={() => jumpTo("architecture")}>进入架构全景 <span>↘</span></button><p><b>核心原则</b>资源不直供 · 系统不直连 · 权限不旁路</p></div></div>
+      <div className="hero-copy"><p className="kicker">ENTERPRISE AI CONTROL PLANE</p><h1>PX-Work框架<br/><em>和权限体系</em></h1><p className="lead">PX-Work 将企业内网算力、模型、数据、知识与业务系统纳入一套统一控制平面，让每一次 AI 调用都身份明确、场景获批、过程可观测、结果可追溯。</p><div className="hero-actions"><button onClick={() => jumpTo("architecture")}>进入架构全景 <span>↘</span></button><p><b>核心原则</b>资源不直供 · 系统不直连 · 权限不旁路</p></div></div>
       <div className="hero-schematic" aria-label="从用户到企业资源的受控调用示意"><div className="schematic-top"><span>员工 / 业务部门</span><span>研发单位 / 专项 Agent</span></div><div className="auth-line"><i />ISC 身份 / 场景 Key<i /></div><div className="schematic-core"><small>唯一入口</small><strong>PX-Work</strong><span>统一网关 · 统一目录 · 统一策略 · 统一审计</span></div><div className="schematic-bottom"><span>模型算力池</span><span>数据与知识</span><span>业务系统 MCP</span></div></div>
       <div className="hero-index"><span>01 / 总体架构</span><span>02 / 权限体系</span><span>03 / 建设闭环</span></div>
     </section>
@@ -63,7 +63,7 @@ export function App() {
     <section className="chapter delivery" id="delivery">
       <div className="section-title"><p>03 / DELIVERY LOOP</p><h2>从需求到运行，全生命周期纳管</h2><span>先设计、再审批、后接入；上线不等于脱离治理</span></div>
       <div className="lifecycle">{lifecycle.map(([number, title, text], index) => <article key={title}><span>{number}</span><h3>{title}</h3><p>{text}</p>{index < lifecycle.length - 1 && <i>→</i>}</article>)}</div>
-      <div className="boundary-grid"><div className="boundary-intro"><small>MANDATORY BOUNDARIES</small><h3>四条建设红线</h3><p>适用于业务部门、研发单位、平台团队与系统供应商。</p></div>{boundaries.map(([title, text], index) => <article key={title}><span>0{index + 1}</span><h4>{title}</h4><p>{text}</p></article>)}</div>
+      <div className="boundary-grid"><div className="boundary-intro"><small>GOVERNANCE REQUIREMENTS</small><h3>四项建设要求</h3><p>适用于业务部门、研发单位、平台运营团队及系统供应商。</p></div>{boundaries.map(([title, text], index) => <article key={title}><span>0{index + 1}</span><h4>{title}</h4><p>{text}</p></article>)}</div>
       <div className="final-statement"><span>PX-WORK / 统一控制平面</span><strong>让能力开放，让边界清晰，让每一个 Agent 都可信、可管、可停。</strong></div>
     </section>
   </main>;

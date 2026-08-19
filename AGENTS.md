@@ -10,4 +10,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 ## Durable visual decisions
 
-- The hero title is “PX-Work框架 / 和权限体系。” in two oversized lines, with the second line highlighted in light blue on the dark navy grid background.
+- The hero title is “PX-Work框架 / 和权限体系” in exactly two oversized lines without terminal punctuation, with the second line highlighted in light blue on the dark navy grid background.
+- The closing statement “让能力开放，让边界清晰，让每一个 Agent 都可信、可管、可停。” stays on one line at desktop widths.
+- Governance copy should use formal, constructive language such as “建设要求”, “统一承载”, “规范接入”, and “策略管控”; avoid colloquial or overly punitive phrases such as “另起炉灶” and “建设红线”.
